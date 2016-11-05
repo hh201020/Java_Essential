@@ -8,5 +8,11 @@ public class Kalamata extends Olive {
 		this.flavor = "Grassy";
 		this.color = Olive.BLACK;
 	}
+	
+	@Override
+	public int crush() {
+		System.out.println("Crush from subclass.");
+		return super.crush();
+	}
 
 }
