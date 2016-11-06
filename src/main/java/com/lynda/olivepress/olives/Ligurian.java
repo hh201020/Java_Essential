@@ -6,6 +6,11 @@ public class Ligurian extends Olive {
 		super(1);
 		this.name = "Lugurian";
 		this.flavor = "Yummy";
-		this.color = Olive.GREEN;	}
+		this.color = Olive.GREEN;
+	}
 
+	@Override
+	public String getOrigin() {
+		return "Italy";
+	}
 }

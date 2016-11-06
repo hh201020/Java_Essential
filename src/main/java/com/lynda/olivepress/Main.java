@@ -35,8 +35,21 @@ public class Main {
 		System.out.println("You got " + press.getTotalOil() + 
 				" units of oil");
 		
-		Kalamata olive1 = (Kalamata)olives.get(0);
+		Olive olive1 = olives.get(0);
 		System.out.println("Olive 1 is from: " + olive1.getOrigin());
+		
+		Olive olive2 = olives.get(1);
+		System.out.println("Olive 2 is from: " + olive2.getOrigin());	
+		
+		Olive olive3 = new Olive() {
+			
+			@Override
+			public String getOrigin() {
+				return "Nowhere";
+			}
+		};
+		System.out.println("Olive 3 is from: " + olive3.getOrigin());	
+
 	}
 
 }

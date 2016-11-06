@@ -1,5 +1,5 @@
 package com.lynda.olivepress.olives;
-public class Olive {
+public abstract class Olive {
 	
 	public static final long BLACK = 0x000000;
 	public static final long GREEN = 0x00FF00;
@@ -30,4 +30,5 @@ public class Olive {
 		return oil;
 	}
 
+	public abstract String getOrigin();
 }
