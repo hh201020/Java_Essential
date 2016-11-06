@@ -1,6 +1,6 @@
 package com.lynda.olivepress.press;
 
-import java.util.ArrayList;
+import java.util.Collection;
 
 import com.lynda.olivepress.olives.Olive;
 
@@ -19,7 +19,7 @@ public class OlivePress {
 	public OlivePress() {
 	}
 	
-	public void getOil(ArrayList<Olive> olives) {
+	public void getOil(Collection<Olive> olives) {
 		
 		int oil = 0;
 		
