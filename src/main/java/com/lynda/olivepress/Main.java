@@ -16,15 +16,12 @@ public class Main {
 		Olive olive;
 		
 		olive = new Kalamata();
-		System.out.println(olive.name);
 		olives.add(olive);
 
 		olive = new Ligurian();
-		System.out.println(olive.name);
 		olives.add(olive);
 
 		olive = new Kalamata();
-		System.out.println(olive.name);
 		olives.add(olive);
 	
 		OlivePress press = new OlivePress();
@@ -37,6 +34,9 @@ public class Main {
 		
 		System.out.println("You got " + press.getTotalOil() + 
 				" units of oil");
+		
+		Kalamata olive1 = (Kalamata)olives.get(0);
+		System.out.println("Olive 1 is from: " + olive1.getOrigin());
 	}
 
 }
