@@ -1,8 +1,6 @@
 package com.lynda.olivepress.olives;
 
 public enum OliveName {
-//	KALAMATA, LIGURIO, PICHOLINE, GOLDEN
-	
 	KALAMATA("Kalamata"), LIGURIO("Ligurio"), 
 	PICHOLINE("Picholine"), GOLDEN("Golden");
 	

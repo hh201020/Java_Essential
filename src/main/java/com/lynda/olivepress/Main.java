@@ -1,34 +1,25 @@
 package com.lynda.olivepress;
 
-import java.lang.reflect.Constructor;
-
-import com.lynda.olivepress.olives.Olive;
-import com.lynda.olivepress.olives.OliveColor;
-import com.lynda.olivepress.olives.OliveName;
+import com.lynda.olivepress.olives.Ligurio;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
-		Olive o = new Olive(OliveName.PICHOLINE, OliveColor.GREEN);
-
+		
+		Object o = new Ligurio();
+		
 		Class<?> c = o.getClass();
-
-		System.out.println(c);
-		System.out.println(c.getName());
-		System.out.println(c.getSimpleName());
+		System.out.println("Class name: " + c.getName());
 		
-		Constructor<?>[] constructors = c.getConstructors();
-		System.out.println("Number of constructors: " + constructors.length);
-		Constructor<?> con = constructors[0];
+		Class<?> sup = c.getSuperclass();
+		System.out.println("Super name: " + sup.getName());
 		
-		Object obj = null;
+		Class<?> top = sup.getSuperclass();
+		System.out.println("Top name: " + top.getName());
 		
-		try {
-			obj = con.newInstance(OliveName.PICHOLINE, OliveColor.GREEN);
-			System.out.println(obj);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
+		Package p = c.getPackage();
+		System.out.println("Package: " + p.getName());
+		
 	}
 
 }

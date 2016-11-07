@@ -1,8 +1,12 @@
 package com.lynda.olivepress.olives;
 
 public class Olive {
+
 	public OliveName oliveName;
 	public OliveColor color;
+	
+	public Olive() {
+	}
 	
 	public Olive(OliveName oliveName, OliveColor color) {
 		this.oliveName = oliveName;
