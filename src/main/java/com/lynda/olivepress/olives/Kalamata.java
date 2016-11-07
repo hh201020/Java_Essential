@@ -15,9 +15,4 @@ public class Kalamata extends Olive {
 		return super.crush();
 	}
 
-	@Override
-	public String getOrigin() {
-		return "Greece";
-	}
-
 }

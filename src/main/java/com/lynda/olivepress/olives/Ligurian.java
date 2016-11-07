@@ -9,8 +9,4 @@ public class Ligurian extends Olive {
 		this.color = Olive.GREEN;
 	}
 
-	@Override
-	public String getOrigin() {
-		return "Italy";
-	}
 }
