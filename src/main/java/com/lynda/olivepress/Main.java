@@ -1,19 +1,18 @@
 package com.lynda.olivepress;
 
-import java.util.ArrayList;
-
-import com.lynda.olivepress.olives.OliveJar;
+import com.lynda.olivepress.olives.Olive;
 import com.lynda.olivepress.olives.OliveName;
 
 public class Main {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
+		Olive o = new Olive(OliveName.PICHOLINE, 0x00FF00);
 
-		OliveJar jar = new OliveJar();
-		jar.addOlive(OliveName.KALAMATA, 0x000000);
-		jar.addOlive(OliveName.PICHOLINE, 0x000000);
-		jar.addOlive(OliveName.LIGURIO, 0x000000);
-		jar.reportOlives();
+		Class<?> c = o.getClass();
+
+		System.out.println(c);
+		System.out.println(c.getName());
+		System.out.println(c.getSimpleName());
 	}
-	
+
 }
