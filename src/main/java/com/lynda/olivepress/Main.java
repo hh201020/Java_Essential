@@ -5,11 +5,18 @@ import java.util.ArrayList;
 import com.lynda.olivepress.olives.Kalamata;
 import com.lynda.olivepress.olives.Ligurian;
 import com.lynda.olivepress.olives.Olive;
+import com.lynda.olivepress.olives.OliveJar;
 import com.lynda.olivepress.press.OlivePress;
 
 public class Main {
 
 	public static void main(String[] args) {
+		
+		ArrayList<Olive> oliveStatic = OliveJar.olives;
+		for (Olive o:oliveStatic) {
+			System.out.println("It's a " + o.oliveName
+					+ " olive!");
+		}
 		
 		ArrayList<Olive> olives = new ArrayList<Olive>();
 		

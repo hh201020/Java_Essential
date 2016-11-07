@@ -4,7 +4,7 @@ public abstract class Olive {
 	public static final long BLACK = 0x000000;
 	public static final long GREEN = 0x00FF00;
 	
-	public String name = "Kalamata";
+	public String oliveName = "Kalamata";
 	public String flavor = "Grassy";
 	public long color = Olive.BLACK;
 	private int oil = 3;
@@ -18,7 +18,20 @@ public abstract class Olive {
 	}
 
 	public Olive() {
-		System.out.println("Constructor of " + this.name);
+		System.out.println("Constructor of " + this.oliveName);
+	}
+	
+	public Olive(String oliveName) {
+		this.oliveName = oliveName;
+	}
+	
+	public Olive(String oliveName, long color) {
+		this(oliveName);
+		this.color = color;
+	}
+	
+	public String toString() {
+		return "name: " + this.oliveName + ": " + "color: " +  this.color;
 	}
 	
 	public Olive(int oil) {
